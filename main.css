@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    flex-direction: column;  /* Organiza os elementos em coluna */
+    align-items: center;     /* Centraliza horizontalmente */
+    min-height: 100vh;      /* Ocupa toda a altura da tela */
+    margin: 0;              /* Remove margens padrão */
+    padding: 20px;          /* Espaçamento opcional */
+    font-family: 'Fira Code', monospace; /* Aplica a fonte em todo o corpo */
+}
+
+/* Estilo para o container do topo (imagem + texto) */
+#topo {
+    display: flex;
+    align-items: flex-start; /* Alinha o texto no topo (em vez de center) */
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Estilos da imagem circular (mantidos do seu código) */
+.circle-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    flex-shrink: 0;         /* Garante que a imagem não encolha */
+    border: 3px solid #bbbbbb; /* Borda preta de 3px de espessura */
+}
+
+.circle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease;
+}
+
+.secreta {
+    opacity: 0;
+}
+
+.circle-image:hover .default {
+    opacity: 0;
+}
+
+.circle-image:hover .secreta {
+    opacity: 1;
+}
+
+/* Estilos para o texto */
+.text-content h1 {
+    margin: 0;
+    font-size: 2rem;       /* Título grande */
+    color: #333;           /* Cor escura */
+}
+
+.text-content p {
+    margin: 10px 0 0;
+    font-size: 1.1rem;
+    color: #666;           /* Cor mais clara */
+}
