@@ -21,8 +21,11 @@
             <p>Esta pagina é dedicada a registrar meus interesses sobre computação, meus projetos (tanto os arquivados quantos os ativos), e as minhas demos.</p>
         </div>
     </div>
-    
+
     <div class="tabs">
+        <input type="radio" name="tabs" id="tab-sobre">
+        <label for="tab-sobre">Sobre Mim</label>
+        
         <input type="radio" name="tabs" id="tab-projetos" checked>
         <label for="tab-projetos">Projetos</label>
 
@@ -32,28 +35,156 @@
         <input type="radio" name="tabs" id="tab-arquivados">
         <label for="tab-arquivados">Arquivados</label>
 
-        <input type="radio" name="tabs" id="tab-sobre">
-        <label for="tab-sobre">Sobre Mim</label>
-
         <!-- Conteúdo das abas -->
+        <div class="tab-content" id="content-sobre">
+            <h2>Sobre Mim</h2>
+            <p>Me chamo Marcelo, também conhecido como Dromedario de Chapeu.</p>
+            <p>Eu comecei a brincar com programação por volta de 2014 com 12 anos, por influencia da minha irmã. Comecei com Python, fazendo coisas simples, explorei algumas coisas nesse periodo, Interface grafica com Kivy e Tkinter, web com Flask, jogos com PyGame, não cheguei a fazer nada com IA pois na epoca não era moda.</p>
+            <p>Com o tempo fui descobrindo outras coisas e outras lingaugens, pelo o que eu me lembro Java foi minha proxima linguagem, no começo eu nem sabia o que era um Paradigma, compilador, VM ou qualquer coisa, eu ate fui gostando de Java, porem eu so fazia brincadeiras simples, nunca fui muito a fundo antes de 2017, quando entrei no ensino medio.</p>
+            <p>Meu ensino medio foi Tecnico em Informatica pelo IFPB. Aprendi Pascal por algum motivo no primeiro ano, porem o resto do curso foi em Python e Java. Esse periodo foi muito importante, foi quando aprendi que eu realmente não gosto de POO, e especialmente não gosto de Java, descobri meu amor por desenvolvimento de sistemas, comecei a programar em Rust, e desisti de programar em Rust, pelo menos Rust me mostrou como eu prefiro linguagens mais simples que não me obrigam a fazer algo de um modo muito especifico. Foi no ensino medio depois de usar Java e Rust que descobri que eu gosto de linguagens que me dão liberdade, mesmo que em troca de segurança, isso foi a semente para que eu começasse a programar em C no futuro.</p>
+            <p>Quando eu entrei na faculdade em 2021 (~ atualmente), eu comecei a firmar mais meus gostos e preferencias, fui obrigado a novamente utilizar Java para sistemas Web, o que reforcou minhas opiniões negativas sobre Java, e minhas preferencia a linguagens simples. Também durante a faculdade eu descobri meus principais interesses em Compiladores e Jogos. Foi quando mais explorei linguagens, novamente tentei aprender Rust, novamente não me adaptei, conheci e usei Nim por um tempo consideravel, e fui migrando de linguagem em linguagem, linguagens essas que tinham como ideia substituir C/C++, por tanto eu descidi, que iria aprender C.</p>
+            <p>Quando comecei a aprender C tudo estava otimo, ate quando eu precisei começar a lidar com sistemas de build e testes, os quais, eu não me adptei a nem um, todos eram extremamente complexos para os meus projetos, e assim eu descobri um outro topico de interesse meu, criação de ferramentas, se eu não achei algum sistema de build que me agrade, eu fiz meu proprio sistema de builds, o qual eu falo mais na sesão de projetos.</p>
+            
+            <h2>Topicos de Interesses</h2>
+            <p>Eu posso resumir meus interesses como qualquer topico que eficiencia e software de qualidade é necessario, areas onde lançar poucas funcionalidades com qualidade é mais importante, pois caso as funcionalidades estejam mal feitas, o sistema não vai funcionar corretamente, do que lançar mais funcionalidades por necessidade, em detrimento da qualidade. Porem posso listar meus maiores interesses.</p>
+            <ul>
+                <li><b>Compiladores:</b> Compiladores é a minha area de maior interesse, sempre achei fascinante como um programa consegue pegar texto e transformar em outro programa. A vontade de criar o meu proprio compilador foi um dos principais motivos para começar a aprender C e Assembly.</li> 
+                <li><b>Sistemas Operacionais:</b> Mais do que um programa criar outro programa a partir de texto, um programa conseguir rodar outros programas me facina tanto quanto se não mais do que compiladores. Sistemas Operacionais é o topico com mais espaço para criar algo muito simples, a algo extremamente complexo, o que é algo que me encanta, saber que tanto um super computador, quando uma lampada smart, possuem um Sistema Operacional, mesmo que exista um abismo de diferença na complexidade.</li>
+                <li><b>Jogos:</b> Como toda criança que cresceu com video games, a curiosidade sobre como eles são feitos sempre permeou a minha mente. Atualmente eu tenho mais noção de como as coisas funcionam por de baixo de uma engine como Godot ou Unity. Criar minha propria engine esta na minha lista.</li>
+                <li><b>Emuladores:</b> Eu fui uma criança que cresceu jogando jogos antigos em emuladores, sem nem saber o que era um emulador, quando eu descobri que um emulador é um programa que finge ser uma maquina diferente ao ponto de rodar os programas feitos para aquela maquina, o Marcelinho criança ficou impressionado, hojé em dia eu entendo como funciona, o que so me da mais interesse sobre o assunto, pois hojé em dia eu consigo entender porque o o Nintendo 64 é tão dificil de emular ou porque o PS1 tem graficos tremulos.</li>
+            </ul>
+
+            <h2>Linguagens (Ordem de gosto) </h2>
+            <div class="tabs_langs">
+                <input type="radio" name="tabs_lang" id="tab_c" checked>
+                <label for="tab_c">C</label>
+                
+                <input type="radio" name="tabs_lang" id="tab_py">
+                <label for="tab_py">Python</label>
+
+                <input type="radio" name="tabs_lang" id="tab_go">
+                <label for="tab_go">Golang</label>
+
+                <input type="radio" name="tabs_lang" id="tab_nim">
+                <label for="tab_nim">Nim</label>
+                
+                <input type="radio" name="tabs_lang" id="tab_elixir">
+                <label for="tab_elixir">Elixir</label>
+                
+                <input type="radio" name="tabs_lang" id="tab_rust">
+                <label for="tab_rust">Rust</label>
+
+                <input type="radio" name="tabs_lang" id="tab_zig">
+                <label for="tab_zig">Zig</label>
+                
+                <input type="radio" name="tabs_lang" id="tab_asm">
+                <label for="tab_asm">Assembly</label>
+
+                <input type="radio" name="tabs_lang" id="tab_java">
+                <label for="tab_java">Java</label>
+
+                <input type="radio" name="tabs_lang" id="tab_haskell">
+                <label for="tab_haskell">Haskell</label>
+                                
+                <div class="tab_lang" id="lang_c">
+                     <div class="linguagem">
+                        <img src="srcs/C_Logo.png" alt="C">                       
+                        <p><b>C</b> é a minha linguagem de preferencia, por mais que eu saiba de todos os problemas e dificuldades de utilizar a linguagem. Como já disse anteriormente, C é a linguagem perfeita para meus gostos. Por mais que ainda tenha pouca experiencia usando a linguagem, é a que eu mais me divirto utilizando.</p>
+                    </div>
+                </div>
+                <div class="tab_lang" id="lang_py">
+                    <div class="linguagem">
+                        <img src="srcs/python_logo.png" alt="C">
+                        <p><b>Python</b> foi a minha primeira linguagem, eu não gosto de Python, por mais que utilize para criar ferramentas, Python tem varias problemas, não deixa claro se algo esta sendo passado por copia ou por referencia, lento, bloated runtime, porem é inegavel que Python é perfeito para criar ferramentas para otimização.</p>
+                    </div>
+                </div>
+                <div class="tab_lang" id="lang_go">
+                    <div class="linguagem">
+                        <img src="srcs/go_logo.png" alt="C">
+                        <p><b>Golang</b> é a linguagem que eu escolho caso eu precise criar algo de verdade sem ser apenas por divertão. Go segue perfeitamente minha filosofia, simplicidade, poucas dependencias, e o mais importante, funciona sem precisar fazer magia contra o compilador ou configuração de ambiente.</p>
+                    </div>
+                </div>
+                <div class="tab_lang" id="lang_nim">
+                    <div class="linguagem">
+                        <img src="srcs/Nim-logo.png" alt="C">
+                        <p><b>Nim</b> foi a linguagem a qual eu mais me dediquei no periodo que utilizei, cheguei um guia, o <a href="https://medium.com/@marceloluismd/como-come%C3%A7ar-a-aprender-nim-b714719b7a85">Aprendendo Nim</a>, Nim foi a linguagem que me mostrou que ue gosto de criar conteudo para a comunidade Brasileira, mesmo que meu guia não tenha sido muito visualizado, foi divertido. </p>
+                    </div>
+                </div>
+                <div class="tab_lang" id="lang_elixir">
+                    <div class="linguagem">
+                        <img src="srcs/elixir_lang.webp" alt="C">
+                        <p><b>Elixir</b> foi a minha primeira linguagem funcional, conheci ainda no Ensino medio e posso dizer que preferiria Elixir a Golang para projetos serios, porem o mercado de Elixir é muito menor do que para Go, por ambas terem foco em aplicações paralelas.</p>
+                    </div>
+                </div>
+                <div class="tab_lang" id="lang_rust">
+                    <div class="linguagem">
+                        <img src="srcs/rust_logo.png" alt="C">
+                        <p><b>Rust</b> eu já tentei aprender umas 3 vezes ao longo dos anos, e eu sempre desistia ao chegar em life times. Rust com sua filosofia de segurança a cima de tudo, me mostrou como eu odeio ser limitado, sim eu sei que o que eu quero fazer não é seguro, mas eu quero fazer mesmo assim.</p>
+                    </div>
+                </div>
+                <div class="tab_lang" id="lang_zig">
+                    <div class="linguagem">
+                        <img src="srcs/zig_logo.png" alt="C">
+                        <p><b>Zig</b> foi a linguagem que eu mais fiquei de olho ao procurar alternativas a C, porem como na epoca eu estava procurando algo muito especifico, Zig não suprio meinhas necessidades, porem tudo que eu vejo sobre a linguagem me cria uma vontade de experimentar melhor quando ela sair da beta.</p>
+                    </div>
+                </div>
+                <div class="tab_lang" id="lang_asm">
+                    <div class="linguagem">
+                        <img src="srcs/asm.png" alt="C">
+                        <p><b>ASM:</b> Como alguem que possui enteresses em compiladores e emuladores, é inevitavel o interesse em Assembly. Assembly pega a minha vontade por liberdade e simplicidade ao nivel extremo, eu não seria loco de usar Assembly para criar algo grande, mas eu não posso negar que tenho vontade de criar algo grande com Assembly.</p>
+                    </div>
+                </div>
+                <div class="tab_lang" id="lang_haskell">
+                    <div class="linguagem">
+                        <img src="srcs/haskell_logo.png" alt="C">
+                        <p><b>Haskell</b> me fez perceber que funcional não é para min, pelo menos não de forma pura, tudo bem que Haskell não é uma linguagem pensada para ser utilizada em produção e sim para pesquisa, e para isso de fato é muito boa, utilizaria fora do mundo real, porem precisaria de ajuda psicologica.</p>
+                    </div>
+                </div>
+                <div class="tab_lang" id="lang_java">
+                    <div class="linguagem">
+                        <img src="srcs/java_logo.webp" alt="C">
+                        <p><b>Java</b> apenas esta nesta lista para deixar claro como Java é o maior oposto ao que eu procuro em uma linguagem, tudo em java e na filosofia da comuniadde eu acho completamente desnecessario. Java é a unica linguagem que eu efetivamente me nego a trabalhar com.</p>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+
         <div class="tab-content" id="content-projetos">
             <h2>Meus Projetos</h2>
             <p>Conteúdo da aba "Projetos" aqui.</p>
         </div>
 
         <div class="tab-content" id="content-demos">
-            <h2>Demos</h2>
-            <p>Conteúdo da aba "Demos" aqui.</p>
+            <div class="demo">                         
+                <img src="srcs/kokonoe.png" alt="">
+                <p><b><a href="https://github.com/MarceloLuisDantas/Kokonoe-Demo-">Kokonoe Demo</a>:</b> Kokonoe foi minha primeira tentativa de criar um interpretador. Kokonoe é um interpretador de um subset de Assembly inspirado em MIPS, atualmente estou planejando minha propria linguagem, também nomeada Kokonoe.</p>
+            </div>
+            <div class="demo">                         
+                <img src="srcs/game_of_life.png" alt="">
+                <p><b><a href="https://github.com/MarceloLuisDantas/GameOfLife">GameOfLife</a>:</b> Um simples simulador de Conway's Game of Life. Uma demo que fiz para aprender o basico de como utilizar NCurses com C. É a recriação de um projeto antigo feito em Rust.</p>
+            </div>
+            <div class="demo">                         
+                <img src="srcs/dungeon.png" alt="">
+                <p><b><a href="https://github.com/MarceloLuisDantas/Dungeon">Dungeon</a>:</b> Um gerador de dungeons estilo Rogue, a ideia era criar um simples roguelike tradicional, porem ainda não desenvolvi muito o projeto.</p>
+            </div>
+            <div class="demo">                         
+                <img src="srcs/ttt.png" alt="">
+                <p><b><a href="https://github.com/MarceloLuisDantas/Raylib-Demo/tree/main/TTT">TTT</a>:</b> um simples jogo da velha, uma demo para entender melhor como criar jogos com Raylib.</p>
+            </div>
+            <div class="demo">                         
+                <p><b><a href="https://github.com/MarceloLuisDantas/C-Codedump/tree/main">C-Codedump</a>:</b> Esse repositorio é apenas um grande codedump de um monte de testes e coisas aleatorias que eu faço em C, tem algumas estrutura de dados, testes de NCurses, experimentos e coisas do tipo.</p>
+            </div>           
         </div>
 
         <div class="tab-content" id="content-arquivados">
-            <h2>Arquivados</h2>
-            <p>Conteúdo da aba "Arquivados" aqui.</p>
-        </div>
-
-        <div class="tab-content" id="content-sobre">
-            <h2>Sobre Mim</h2>
-            <p>Conteúdo da aba "Sobre Mim" aqui.</p>
+            <div class="demo">                         
+                <img src="srcs/sector-seven.png" alt="">
+                <p><b><a href="https://github.com/MarceloLuisDantas/SectorSeven.py">Sector Seven</a>:</b> Primeira versão do Sector Seven, esta arquivada, esta versão é extremamente mal feita, feiz ela enquanto eu aprendia o que precisava sobre Python, não estava escalando para o que eu precisava, porem não quis deletar, porque sim.</p>
+            </div> 
+            <div class="demo">                         
+                <p><b><a href="https://github.com/MarceloLuisDantas/FacilaDirlididi">Facila</a>:</b> Minha primeira ferramenta CLI, foi feito para ajudar na cadeira de Programação 2, onde a gente utilizava uma ferramenta meio chata, então criei isso para ajudar a enviar os roteiros e fazer os testes.</p>
+            </div>   
         </div>
     </div>
 </body>
